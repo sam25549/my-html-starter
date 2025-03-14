@@ -118,3 +118,12 @@ p {
 nav.container {
     padding: 1em;
 }
+
+.decorated-section {
+    position: relative;
+    padding: 0px;
+    background-image: url('../img/Highschool_Doodle01.png'), url('../img/Highschool_Doodle02.png');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 200px auto, 200px auto; /* Adjust sizes as needed */
+}
