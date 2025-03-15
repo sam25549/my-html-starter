@@ -69,6 +69,7 @@ nav ul {
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center; /* Center the nav items vertically */
 }
 
 nav ul li {
@@ -104,6 +105,21 @@ article {
 }
 
 p {
+    /* Center the main container */
+main.container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically if needed */
+    min-height: 100vh; /* Ensure it takes the full height of the viewport */
+}
+
+/* Center the text within the p elements */
+p {
+    max-width: 60ch; /* Ancho máximo basado en el ancho del carácter "0" */
+    text-align: center; /* Center text within the p element */
+}
     max-width: 60ch; /* Ancho máximo basado en el ancho del carácter "0" */
 }
 
@@ -116,12 +132,22 @@ p {
 }
 
 nav.container {
+    padding: 0.4%;
+}
+
+main.container {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically if needed */
+    min-height: 100vh; /* Ensure it takes the full height of the viewport */
 }
 
 .decorated-section {
     position: relative;
     padding: 0px;
+    text-align: center;
     background-image: url('../img/Highschool_Doodle01.png'), url('../img/Highschool_Doodle02.png');
     background-position: left top, right bottom;
     background-repeat: no-repeat;
