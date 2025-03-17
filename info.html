@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curiosity Practices</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+                });
+        });
+    </script>
 
-    <picture>
-        <source srcset="img/FotoChica.webp" type="image/webp" media="(max-width: 380px)">
-        <source srcset="img/FotoChica.jpg" type="image/jpg" media="(max-width: 380px)">
-
-        <source srcset="img/FotoMediana.webp" type="image/webp" media="(max-width: 600px)">
-        <source srcset="img/FotoMediana.jpg" type="image/jpg" media="(max-width: 600px)">
-
-        <source srcset="img/FotoGrande.webp" type="image/webp" media="(max-width: 1200px)">
-        <source srcset="img/FotoGrande.jpg" type="image/jgp" media="(max-width: 1200px)">
-
-        <img src="img/FotoGrande.jpg" alt="FotoAdaptable">
-    </picture>
-    
+    <main class="container">
+        <header>
+            <h1>Curiosity Practices</h1>
+        </header>
+        
 </body>
 </html>

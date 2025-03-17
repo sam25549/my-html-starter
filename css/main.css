@@ -139,7 +139,7 @@ main.container {
     padding: 1em;
     padding-top: 0;
     margin-top: 0;
-    display: flex;
+    display: flex table-header-group;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
     justify-content: center; /* Center content vertically if needed */
@@ -157,6 +157,7 @@ main.container {
 }
 /* Style the dropdown container */
 .dropdown {
+    list-style: none;
     position: relative;
     display: inline-block;
 }
@@ -166,8 +167,8 @@ main.container {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 0;
+    top: 100%;
     z-index: 1;
 }
 
