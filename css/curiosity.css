@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&family=Teko:wght@300..700&display=swap');
+
+html {
+    /* 
+    * box-sizing
+    * default: 'box-sizing: content-box'
+    * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
+    */
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}

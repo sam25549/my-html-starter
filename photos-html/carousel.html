@@ -4,31 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/main.css">-->
+    <link rel="stylesheet" href="../css/carousel.css">
+
     
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <ul>
-                <li>
-                    <a href="/" aria-label="Inicio">
-                        <img src="img/Highschool_LogoChiquito.png" alt="Highschool_Logo" width="100">
+    <!--<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('../header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+                });
+        });
+    </script>-->
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta">A</div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
                     </a>
-                </li>
-                <li><a href="./info.html" title="Informacion del proyecto">Info</a></li>
-                <li><a href="./contact.html" title="Contact Info">Contact</a></li>
-                <li class="dropdown">
-                    <a href="./photos.html" title="Collages y carrusel">Photos</a>
-                    <ul class="dropdown-content">
-                        <li><a href="./photos-html/collages.html" title="Collages">Collages</a></li>
-                        <li><a href="./photos-html/carousel.html" title="Carrusel">Carrusel</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta">B</div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta">C</div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+            <a href="#itemCarrousel-3">•</a>
+        </div>
+    </div>
     
 </body>
 </html>
