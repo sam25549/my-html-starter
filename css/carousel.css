@@ -60,17 +60,6 @@
     background-color: rgb(200, 226, 50);
 }
 
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
 
 .itemCarrouselArrows > a > i{
     color: white;
