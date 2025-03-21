@@ -5,12 +5,17 @@
 }
 
 .carrousel{
-    width: 100%;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    align-items: center;
+    
 }
 
 .conteCarrousel{
     width: 100%;
-    height: 200px;
+    height: 400px;
     overflow: hidden;
 }
 
